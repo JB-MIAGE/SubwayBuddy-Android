@@ -7,5 +7,10 @@
     <string name="four_string">Four</string>
     <string name="menu_connexionstring">Connexion</string>
     <string name="menu_aboutusstring">A propos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_navigation_sidebar">Sidebar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
