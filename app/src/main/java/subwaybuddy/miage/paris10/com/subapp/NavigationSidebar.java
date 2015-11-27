@@ -1,5 +1,6 @@
 package subwaybuddy.miage.paris10.com.subapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -72,7 +73,8 @@ public class NavigationSidebar extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_login) {
-            // @TODO
+            startActivity(new Intent(this,LoginActivity.class));
+
             // @kuga --> ici, ouvrir la popup/vue de connexion
         }
 
