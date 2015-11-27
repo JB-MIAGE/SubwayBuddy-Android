@@ -33,8 +33,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String reg_url = "/register.php";
-        String login_url = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/login";
+        String reg_url = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users";
+        String login_url = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users/login";
         String method = params[0];
         if (method.equals("register")) {
             String name = params[1];
