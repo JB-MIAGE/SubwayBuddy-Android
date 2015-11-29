@@ -33,9 +33,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String reg_url = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users";
-        String login_url = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users/login";
-        String method = params[0];
+        // @TODO : variabliser fichier strings.xml !
+        String reg_url          = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users";
+        String login_url        = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users/login";
+        String method           = params[0];
+        System.out.println(params);
+        /*
         if (method.equals("register")) {
             String name = params[1];
             String user_name = params[2];
@@ -108,7 +111,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             }
 
 
-        }
+        }*/
         return null;
     }
 

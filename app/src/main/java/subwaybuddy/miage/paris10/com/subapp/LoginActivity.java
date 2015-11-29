@@ -9,11 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 
-public class LoginActivity extends AppCompatActivity {
+import java.io.IOException;
+import java.net.MalformedURLException;
 
+import subwaybuddy.miage.paris10.com.subapp.libraries.HttpRequestsApi;
+
+public class LoginActivity extends AppCompatActivity
+{
     EditText ET_NAME,ET_PASS;
     String login_name,login_pass;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +27,25 @@ public class LoginActivity extends AppCompatActivity {
         ET_PASS = (EditText)findViewById(R.id.user_pass);
 
     }
+
     public void userReg(View view)
     {
-
         startActivity(new Intent(this,Register.class));
     }
 
-    public void userLogin(View view)
+    public void userLogin(View view) throws IOException
     {
         login_name = ET_NAME.getText().toString();
         login_pass = ET_PASS.getText().toString();
-        String method = "login";
-        BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method, login_name, login_pass);
-
+        //BackgroundTask backgroundTask = new BackgroundTask(this);
+        //backgroundTask.execute( "login", login_name, login_pass );
+        // on POST le contenu des champs textes pour authentifier l'utilisateur.
+        String url          = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users/login" ;
+        HttpRequestsApi api = new HttpRequestsApi( url ) ;
+        String reponse      = api.post( "username=" + login_name + "&password=" + login_pass );
+        // @TODO Kuga : parser le JSON pour voir le résultat
+        // par exemple, si tu trouves "id" dans le JSON, c'est que l'utilisateur est authentifié
+        // dans ce cas, préparer la suite.
+        System.out.println( reponse );
     }
-
-
 }
