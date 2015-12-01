@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity
         //BackgroundTask backgroundTask = new BackgroundTask(this);
         //backgroundTask.execute( "login", login_name, login_pass );
         // on POST le contenu des champs textes pour authentifier l'utilisateur.
-        String url          = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/users/login" ;
+        String url          = "http://christian-hiroz.com/SubwayBuddy/web/app_dev.php/api/users/login" ;
         HttpRequestsApi api = new HttpRequestsApi( url ) ;
         String reponse      = api.post("username=" + login_name + "&password=" + login_pass);
         System.out.println(reponse );
@@ -66,8 +66,8 @@ public class LoginActivity extends AppCompatActivity
             String tempreponse = str_valueId;
             System.out.println("id" + str_valueId);
             // Creating user login session
-            session.createLoginSession(str_valueUsername, str_valueEmail);
-            startActivity(new Intent(this, DashboardActivity.class));
+            session.createLoginSession(str_valueId,str_valueUsername, str_valueEmail);
+            startActivity(new Intent(this, TravelActivity.class));
 
 
         }
