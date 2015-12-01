@@ -1,0 +1,19 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   app/src/main/AndroidManifest.xml
+#	modified:   app/src/main/java/subwaybuddy/miage/paris10/com/subapp/LoginActivity.java
+#	modified:   app/src/main/java/subwaybuddy/miage/paris10/com/subapp/SessionManager.java
+#
+# Untracked files:
+#	app/src/main/java/subwaybuddy/miage/paris10/com/subapp/DateDialog.java
+#	app/src/main/java/subwaybuddy/miage/paris10/com/subapp/TimeDialog.java
+#	app/src/main/java/subwaybuddy/miage/paris10/com/subapp/TravelActivity.java
+#	app/src/main/res/layout/activity_travel.xml
+#	xvsqelby.qdw.txt
+#
+
