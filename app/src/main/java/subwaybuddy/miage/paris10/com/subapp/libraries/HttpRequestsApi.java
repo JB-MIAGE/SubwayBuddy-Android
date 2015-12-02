@@ -44,7 +44,7 @@ public class HttpRequestsApi
         StringBuilder res   = new StringBuilder() ;
 
         // méthode GET.
-        this.connection.setRequestMethod( "GET" ) ;
+        this.connection.setRequestMethod("GET") ;
 
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(

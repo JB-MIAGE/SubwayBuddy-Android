@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity
             System.out.println("id" + str_valueId);
             // Creating user login session
             session.createLoginSession(str_valueId,str_valueUsername, str_valueEmail);
-            startActivity(new Intent(this, TravelActivity.class));
+            startActivity(new Intent(this, TravelViewActivity.class));
 
 
         }
