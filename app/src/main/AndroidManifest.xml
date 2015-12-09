@@ -63,11 +63,6 @@
             android:name=".Register"
             android:label="@string/title_activity_register" >
         </activity>
-        <activity
-            android:name=".libraries.DashboardActivity"
-            android:label="@string/title_activity_dashboard"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
         <activity android:name=".TravelActivity" >
         </activity>
         <activity android:name=".TravelViewActivity" >

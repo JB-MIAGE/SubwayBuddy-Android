@@ -2,10 +2,7 @@ package subwaybuddy.miage.paris10.com.subapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -15,9 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
-import subwaybuddy.miage.paris10.com.subapp.libraries.DashboardActivity;
 import subwaybuddy.miage.paris10.com.subapp.libraries.HttpRequestsApi;
 
 public class LoginActivity extends AppCompatActivity
@@ -67,7 +62,7 @@ public class LoginActivity extends AppCompatActivity
             System.out.println("id" + str_valueId);
             // Creating user login session
             session.createLoginSession(str_valueId,str_valueUsername, str_valueEmail);
-            startActivity(new Intent(this, TravelViewActivity.class));
+            // startActivity(new Intent(this, DashboardActivity.class));
 
 
         }

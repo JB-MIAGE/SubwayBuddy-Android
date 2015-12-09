@@ -1,4 +1,4 @@
-package subwaybuddy.miage.paris10.com.subapp;
+package subwaybuddy.miage.paris10.com.subapp.libraries;
 import java.util.Calendar;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
